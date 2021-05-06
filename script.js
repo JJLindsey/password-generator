@@ -22,7 +22,13 @@ var upperCase = prompt("Do you want to include upper case letters?");
 
 var numbers = prompt("Do you enat to included numbers in your password?");
 
-var 
+var specialCharacters = prompt("Do you want to include special characters?");
+//validate user response
+
+
+//
+
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
