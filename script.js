@@ -32,7 +32,7 @@ while (passwordLength <= 7 || passwordLength >=129) {
   
   var includesUpCase = confirm("Do you want to include upper case letters?");
   
-  var includesNum = confirm("Do you want to included numbers in your password?");
+  var includesNum = confirm("Do you want to include numbers in your password?");
   
   var includeSpChar = confirm("Do you want to include special characters?");
 
@@ -71,7 +71,6 @@ while (passwordLength <= 7 || passwordLength >=129) {
 
   return generatedPassword;
 }
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
