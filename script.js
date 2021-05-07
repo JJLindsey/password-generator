@@ -20,14 +20,15 @@ function generatePassword() {
 
   var generatedPassword = "";
 
-  var passwordLength = prompt("Please enter the number of characters for your password between 8 - 28.");
+  var passwordLength = prompt("Please enter the number of characters for your password between 8 - 128.");
 
   // use while() to validate length
-while (condition) {
-  
+while (passwordLength <= 7 || passwordLength >=129) {
+  alert("Password must be between 8 - 128 characters.");
+  var passwordLength = prompt("Please enter the number of characters for your password between 8 - 128.")
 }
 
-  var includesLowCase = prompt("Do you want to include lower case letters?");
+  var includesLowCase = confirm("Do you want to include lower case letters?");
   
   var includesUpCase = confirm("Do you want to include upper case letters?");
   
@@ -62,10 +63,10 @@ while (condition) {
 
   // check which characters you would want to include on the character pool
 
+
   // use for loop to generate a password by getting random characters from the generated pool
 
-
-  for (let index = 0; index < parseInt(passwordLength); index++) {
+  for (var index = 0; index < parseInt(passwordLength); index++) {
     generatedPassword += selectedPool[Math.floor(Math.random()*selectedPool.length)]
   }
 
