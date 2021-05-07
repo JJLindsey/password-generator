@@ -51,13 +51,12 @@ while (passwordLength <= 7 || passwordLength >=129) {
   }
 
   if (includesUpCase) {
-    selectedPool = selectedPool.concat(includesUpCase)
+    selectedPool = selectedPool.concat(upperCase)
   }
 
   if (includesLowCase) {
-    selectedPool = selectedPool.concat(includesLowCase)
+    selectedPool = selectedPool.concat(lowerCase)
   }
-
 
   console.log(selectedPool)
 
@@ -72,27 +71,6 @@ while (passwordLength <= 7 || passwordLength >=129) {
 
   return generatedPassword;
 }
-
-//validate user response
-
-
-//random generate function
-
-
-// function myVoidFunction() {
-//   console.log("Hello")
-// }
-
-// function myReturnFunction() {
-//   return "Hello"
-// }
-
-// function anotherFunction() {
-//   var word = myReturnFunction();
-
-//   console.log(word)
-// }
-
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
