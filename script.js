@@ -74,3 +74,6 @@ while (passwordLength <= 7 || passwordLength >= 129) {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+var myButton = document.querySelector(".btn")
+document.body.style.backgroundColor = 'lightblue';
+myButton.style.backgroundColor = "blue";
